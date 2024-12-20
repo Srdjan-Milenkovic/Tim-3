@@ -1,0 +1,404 @@
+@font-face {
+    font-family: Coco-R;
+    src: url(font/Cocogoose-Pro-Regular-trial.ttf);
+}
+@font-face {
+    font-family: Made-M;
+    src: url(font/MADECarvingSoftPERSONALUSE-Medium.otf);
+}
+@font-face {
+    font-family: Made-R;
+    src: url(font/MADECarvingSoftPERSONALUSE-Regular.otf);
+  }
+  @font-face {
+    font-family: Made-SB;
+    src: url(font/MADECarvingSoftPERSONALUSE-SemiBold.otf);
+  }
+  @font-face {
+    font-family: Made-B;
+    src: url(font/MADECarvingSoftPERSONALUSE-Bold.otf);
+  }
+  @font-face {
+    font-family:Cocogoose;
+    src: url(font/Cocogoose-Pro-Regular-trial.ttf);
+}
+
+@font-face {
+    font-family:cocogoosesemi;
+    src: url(font/Cocogoose-Pro-Semilight-trial.ttf);
+}
+
+*{margin: 0;
+    padding: 0;}
+
+    header{
+        padding:30px 100px 30px 100px ;
+        background-color: var(--sekundarna);
+        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.20);
+        display: flex;
+        max-width: 100vw;
+        justify-content: space-between;
+        font-family: cocogoose;
+        align-items: center;
+        font-size: 23px;
+        max-height: 142px;
+    }
+    header img{user-select: none;}
+    
+    header #mobile{
+        display: none;
+        user-select: none;
+    }
+    
+    nav{
+        width: 763px;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        position: relative;
+        right: calc(100%-100px);
+        bottom: -25px
+    }
+    
+    nav #blog{
+        color:#2A56AA;
+        }
+    
+    nav a{
+        text-decoration: none;
+        color:#346CD4;  
+        position: relative;
+        padding: 0 25px 40px 25px;
+    }
+    
+    .dropmenu{
+        position: absolute;
+        width: fit-content;
+        right:91px;
+        transition: 300ms;
+        top: 55px;
+        display: none;
+    }
+    
+    .closemenu{
+        position: absolute;
+        width: fit-content;
+        right:90px;
+        transition: 300ms;
+        top: 55px;
+        display: none;
+    }
+    
+    header #closemenu{
+        position:absolute;
+        cursor: pointer;
+        transition: 300ms;
+        user-select: none;
+    }
+    
+    header #menu{
+        align-self: flex-start;
+        position: absolute;
+        user-select: none;
+        z-index: 3;
+        cursor: pointer;
+        transition: 300ms;
+    }
+    
+    .dropdown{
+        display: flex;
+        width: 100%;
+        top: -500px;
+        background-color: var(--sekundarna);
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 0px 0px 15px 15px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        position: absolute;
+        z-index: 100;
+        overflow: hidden;
+        transition: 300ms;
+        transition-timing-function: ease-out;
+    }
+        
+    .dropdown a{
+        text-decoration: none;
+        color:var(--primarna) ;
+        font-family: cocogoosesemi;
+        font-size:20px;
+        max-width: 100vw;
+        display: flex;
+        padding: 20px 10px;
+        justify-content: center;
+        align-items: center;
+        align-self: stretch;
+        transition: 300ms;
+        transition-timing-function: ease-out;
+        transition-delay:50ms ;
+    }
+    
+    .dropdown a:focus{
+        font-family: cocogoose;
+        color: var(--accent);
+    }
+    .dropdown a:hover{
+        background: rgba(52, 108, 212, 0.35);
+        transition: 300ms;
+        transition-timing-function: ease-out;
+        transition-delay:50ms ;
+    }
+    
+    
+    nav a:hover::after{
+      width: 125%;
+    }
+    
+    nav a::after{
+        content: '';
+        width: 0%;
+        display: block;
+        height: 9px;
+        background: #2A56AA;
+        transition: 0.5s;
+        bottom: -49px;
+        left: -12px;
+        position: relative;
+    }
+.hero{display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vw;
+height: 807px;
+}
+.hero .prvo{
+    height: 771px;
+    flex-shrink: 0;
+
+}
+
+.hero .drugo{
+    display: flex;
+    width: 179px;
+    height: 179px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    border-radius: 100px;
+    position: absolute;
+    left: 420px;
+    top: 770px;
+}
+
+.glavno{
+    display: flex;
+    padding: 0px 150px;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-items: center;
+    gap: 80px;
+    flex-shrink: 0;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 80px;
+    margin-bottom: 130px;
+    
+
+}
+
+.glavno h1{
+    align-self: stretch;
+color: #346CD4;
+text-align: center;
+font-family: "MADE Carving Soft PERSONAL USE";
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+font-family: Cocogoose;
+}
+
+.glavno .prvo{
+    display: flex;
+padding-bottom: 76px;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+border-bottom: 2px solid #000;
+}
+
+.glavno .prvo p{
+    width: 498px;
+color: #000;
+font-family: Made-R;
+font-size: 24px;
+}
+
+.glavno .drugo{
+    display: flex;
+padding-bottom: 76px;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+border-bottom: 2px solid #000;
+}
+
+.glavno .drugo p{
+    width: 498px;
+color: #000;
+text-align: right;
+font-family: "MADE Carving Soft PERSONAL USE";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+font-family: "MADE Carving Soft PERSONAL USE";
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+font-family: Made-R;
+}
+
+.glavno .trece{
+    display: flex;
+padding-bottom: 76px;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+border-bottom: 2px solid #000;
+}
+
+.glavno .trece p{
+    width: 498px;
+color: #000;
+font-family: "MADE Carving Soft PERSONAL USE";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+font-family: "MADE Carving Soft PERSONAL USE";
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+font-family: Made-R;
+}
+
+.glavno .cetvrto{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+}
+
+.glavno .cetvrto p{
+    width: 498px;
+color: #000;
+text-align: right;
+font-family: "MADE Carving Soft PERSONAL USE";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+font-family: "MADE Carving Soft PERSONAL USE";
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+font-family: Made-R;
+}
+
+footer{
+    display: flex;
+    max-width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #346CD4;
+    padding: 82.5px 100px 82.5px 100px;
+    font-family: cocogoosesemi;
+    font-size: 23px;
+    transition: 0.3s;
+}
+
+.footernav{
+    display: flex;
+    gap: 83px;
+}
+
+.linkovi{
+    display: flex;
+    width: 140px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    row-gap: 20px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.footernav a{
+    text-decoration: none;
+    color: white;
+}
+
+.footernav a:hover{
+    text-decoration: none;
+    color: #96d0f1;
+}
+
+@media (max-width:1200px) {
+    header{padding:30px 50px 30px 50px ;
+    transition: 0.3s;}
+    footer{padding: 82.5px 50px 82.5px 50px;
+    transition: 0.3s;}
+}
+
+
+@media (max-width:1100px){
+    nav{
+    display: none;
+    }
+   header #menu{display: block }
+   footer{flex-direction: column;
+gap: 100px;}
+.dropmenu{display: block;}
+.closemenu{display: block;}
+.closemenu #closemenu{display: none;}
+
+
+footer{padding: 55px 50px 55x 50px;}
+.footernav{
+text-align: center;
+gap: 42px;}
+}
+
+@media (max-width:600px){
+    header{padding:32px 10px 32px 10px; 
+}
+
+.dropmenu{right: 0;
+transition: 300ms;}
+
+.closemenu{right: 8px;
+transition: 300ms;}
+
+    header #pc{display: none;}
+    header #mobile{display: block;}
+    header #menu{right: 10px;
+    transition: 300ms;}
+    header #closemenu{right: 3px;
+    transition: 300ms;}
+    footer{padding: 55px 10px 55px 10px;
+    transition: 0.3s;}
+    .footernav{flex-direction: column;}
+    }

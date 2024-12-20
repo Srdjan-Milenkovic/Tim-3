@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="homepage.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <title>Početna stranica</title>
+        <link rel="icon" type="image/x-icon" href="slike/phone_logo.svg">
+        <script src="https://kit.fontawesome.com/e401d58798.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+        <script src="dropdown.js"></script>
+    </head>
+    <body>
+
+        <header>
+            <a href="homepage.html" id="pc"><img src="slike/pc_logo.svg" alt=""></a>
+            <a href="homepage.html" id="mobile"><img src="slike/phone_logo.svg" alt=""></a>        
+            <nav>
+                <a href="homepage.html" id="pocetna">Početna</a>
+                <a href="radovi.html" id="radovi">Radovi</a>
+                <a href="blog.html" id="blog">Blog</a>
+                <a href="osmeru.html" id="osmeru">O Smeru</a>
+                <a href="kontakt.html" id="kontakt">Kontakt</a>
+            </nav>
+            <div class="dropmenu"><img src="slike/menu.svg" alt="" onclick="dropmenu()" id="menu"></div>
+            <div class="closemenu"><img src="slike/closemenu.svg" alt="" onclick="closemenu()" id="closemenu"></div>
+        </header>
+
+        <div class="dropdown" id="dropdown">
+            <a href="homepage.html" >Početna</a>
+            <a href="radovi.html" >Radovi</a>
+            <a href="blog.html" >Blog</a>
+            <a href="osmeru.html" >O Smeru</a>
+            <a href="kontakt.html" >Kontakt</a>
+        </div>
+
+        <div class="hero">
+            <div class="teksthero">
+                <p>Tehničari za <br>digitalnu grafiku i <br>internet<br> oblikovanje</p>
+            </div>
+            <img src="slike/pisanje.png" alt="">
+        </div>
+
+        <div class="sadrzajkartica">
+            <h1>Učenici koji su radili na portfoliu</h1>
+
+            <div class="kartice">
+                <div class="kartica">
+                    <img src="slike/sofija.png" alt="">
+                    <div class="tekstkartice">
+                        <p class="naslovsg">Sofija Gligorić</p>
+                        <p class="tekstsg">Lider grupe - savetovala i vodila računa da sve izgleda kako treba.</p>
+                    </div>
+                    <a href="" class="button">profil</a>
+                </div>
+
+                <div class="kartica1">
+                    <img src="slike/srdjan.png" alt="">
+                    <div class="tekstkartice">
+                        <p class="naslovsg">Srđan Milenković</p>
+                        <p class="tekstsg">Pravio stranicu za radove i učenike, pomagao u smišljanju wireframe-a.</p>
+                    </div>
+                    <a href="" class="button">profil</a>
+                </div>
+
+                <div class="kartica2">
+                    <img src="slike/nina.png" alt="">
+                    <div class="tekstkartice">
+                        <p class="naslovsg">Nina Popović</p>
+                        <p class="tekstsg">Pravila početnu stranicu i pružala pomoć gde je bila potrebna.</p>
+                    </div>
+                    <a href="" class="button">profil</a>
+                </div>
+
+                <div class="kartica3">
+                    <img src="slike/milan.png" alt="">
+                    <div class="tekstkartice">
+                        <p class="naslovsg">Milan Čović</p>
+                        <p class="tekstsg">Pravio je header, footer, login i sign up. Fokus na kodiranju.</p>
+                    </div>
+                    <a href="" class="button">profil</a>
+                </div>
+
+                <div class="kartica4">
+                    <img src="slike/danilo.png" alt="">
+                    <div class="tekstkartice">
+                        <p class="naslovsg">Danilo Kovljenić</p>
+                        <p class="tekstsg">Pravio je kontakt stranicu. Fokus na kodiranju.</p>
+                    </div>
+                    <a href="" class="button">profil</a>
+                </div>
+
+                <div class="kartica5">
+                    <img src="slike/milica.png" alt="">
+                    <div class="tekstkartice">
+                        <p class="naslovsg">Milica Oljuz</p>
+                        <p class="tekstsg">Pravila je blog stranicu i pomagala u wireframe-u.</p>
+                    </div>
+                    <a href="" class="button">profil</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sadrzajalata">
+            <p class="alati">Alati</p>
+
+            <div class="karticealata">
+                <div class="karticaalata">
+                    <img src="slike/powerpoint.png" alt="">
+                    <div class="tekstalata">
+                        <p class="naslova">PowerPoint</p>
+                        <p>PowerPoint je program za izradu <br>prezentacija, unutar Microsoft <br>Office paketa. Pomoću njega<br> možete brzo i lako stvoriti<br> zanimljive prezentacije.</p>
+                    </div>
+                </div>
+
+                <div class="karticaalata">
+                    <img src="slike/excel.png" alt="">
+                    <div class="tekstalata">
+                        <p class="naslova">Excel</p>
+                        <p>Excel je jedan od najefikasnijih <br>programa za grafo-analitičku i<br> tabelarnu obradu podataka. </p>
+                    </div>
+                </div>
+
+                <div class="karticaalata">
+                    <img src="slike/wordd.png" alt="">
+                    <div class="tekstalata">
+                        <p class="naslova">Word</p>
+                        <p>Microsoft Word je program za <br>obradu teksta koji možete <br>koristiti za izradu i ažuriranje<br> raznovrsnih poslovnih i ličnih <br>dokumenata.</p>
+                    </div>
+                </div>
+
+                <div class="karticaalata">
+                    <img src="slike/photoshop.png" alt="">
+                    <div class="tekstalata">
+                        <p class="naslova">Adobe Photoshop<p>
+                        <p>Adobe Photoshop je softver <br>namijenjen za rastersko<br> obrađivanje digitalnih <br>fotografija.</p>
+                    </div>
+                </div>
+
+                <div class="karticaalata">
+                    <img src="slike/illustrator.png" alt="">
+                    <div class="tekstalata">
+                        <p class="naslova">Adobe Illustrator</p>
+                        <p>Adobe Illustrator je program za<br> vektorsko crtanje što korisnicima<br> programa omogućava stvaranje <br>fajlova male veličine (u<br> kilobajtima) ali visok kvalitet.</p>
+                    </div>
+                </div>
+
+                <div class="karticaalata">
+                    <img src="slike/figma.png" alt="">
+                    <div class="tekstalata">
+                        <p class="naslova">Figma</p>
+                        <p>Figma je program za grafički <br>dizajn koji se fokusira na dizajn<br> korisničkog interfejsa i<br> korisničkog iskustva. Pruža <br>mogućnost rada u timovima.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="sadrzajbloga">
+            <img src="slike/slikabloga.png" alt="">
+            <div class="tekstbloga">
+                <div class="tekst">
+                    <p class="nasblog">Naš blog!</p>
+                    <p> Ovde možete videti slike koje prikazuju sve <br>avanture, smeh i lepe uspomene koje smo <br>stvorili zajedno.
+                    Uživajte u prelepim trenucima i inspiraciji koja <br>dolazi iz zajedničkog stvaranja nezaboravnih<br> iskustava!</p>
+                </div>
+                <a href="" class="button1">poseti</a>
+            </div>
+        </div>
+
+        <div class="sadrzajradova">
+            <img src="slike/puzla.png" alt="">
+            <div class="tekstradova">
+                <div class="tekstr">
+                    <p class="nasiradovi">Naši radovi!</h1>
+                    <p>Pogledajte zanimljive i inovativne radove<br> naših marljivih učenika.<br>
+                    Od vizuelnih identiteta do digitalnih<br> ilustracija, radovi obuhvataju širok spektar<br> stilova i tema.</p>
+                </div>
+                <a href="" class="button">poseti</a>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <a href="https://birografikamb.co.rs/index.php/sr/"><img src="slike/Birografika-MB-logo.png" class="item item1"></a>
+            <a href="https://www.icbtech.io/"><img src="slike/icbtech.png" class="item item2"></a>
+            <a href="https://inspiragrupa.com/cyr/"><img src="slike/Inspira-grupa-logo.png" class="item item3"></a>
+            <a href="https://www.itcsubotica.org.rs/en"><img src="slike/itclustert.png" class="item item4"></a>
+            <a href="https://www.studiopresent.com/"><img src="slike/studiopresent-logo-centered.png" class="item item5"></a>
+            <a href="https://rotografika.rs/sr"><img src="slike/rotografika-logo-80.png" class="item item6"></a>
+        </div>
+
+        <footer>
+            <a href="homepage.html"><img src="slike/logop.png" class="slovop" alt=""></a>
+            <div class="footernav">
+                <a href="radovi.html">Radovi</a>
+                <a href="osmeru.html">O Smeru</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="blog.html">Blog</a>
+            </div>
+            <div class="linkovi">
+                <a href="https://www.youtube.com/@politehn"><img src="slike/yt.png" alt=""></a>
+                <a href="https://www.instagram.com/politehnicka.skola.subotica/?hl=en"><img src="slike/ig.png" alt=""></a>
+                <a href="https://www.tiktok.com/@politehnickasubotica"><img src="slike/tt.png" alt=""></a>
+                <a href="https://www.facebook.com/politehnickasu.edu.rs"><img src="slike/face.png" alt=""></a>
+            </div>
+        </footer>
+    </body>
+</html>

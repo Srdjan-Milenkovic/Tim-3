@@ -1,0 +1,266 @@
+/* 
+linkuj i ovaj css file i napravi svoj
+da nemora svako praviti header i footer 
+tu je isto i navigacija za mobilnu verziju
+
+!!! da ti radi javascript treba da <script src="dropdown.js"></script>  bude u <head> u html
+
+ovo je html kod za header
+
+     <header>
+    <a href="pocetna.html" id="pc"><img src="slike za sajt/pc_logo.svg" alt=""></a>
+    <a href="pocetna.html" id="mobile"><img src="slike za sajt/phone_logo.svg" alt=""></a>        
+   <nav>
+        <a href="heropage.html" id="pocetna">Početna</a>
+        <a href="radovi.html" id="radovi">Radovi</a>
+        <a href="blog.html" id="blog">Blog</a>
+        <a href="osmeru.html" id="osmeru">O Smeru</a>
+        <a href="Kontakt.html" id="kontakt">Kontakt</a>
+    </nav>
+   <div class="dropmenu"><img src="slike za sajt/menu.svg" alt="" onclick="dropmenu()" id="menu"></div>
+  <div class="closemenu"><img src="slike za sajt/closemenu.svg" alt="" onclick="closemenu()" id="closemenu"></div>
+    </header>
+ 
+
+ovo je html kod za footer
+
+ <footer>
+    <a href="pocetna.html"><img src="slike za sajt/footer_logo.svg" alt=""></a>
+    <div class="footernav">
+        <a href="radovi.html">Radovi</a>
+        <a href="osmeru.html">O Smeru</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="blog.html">Blog</a>
+    </div>
+    <div class="linkovi"
+        <a href="https://www.youtube.com/@politehn"><img src="slike za sajt/youtube.svg" alt=""></a>
+        <a href="https://www.instagram.com/politehnicka.skola.subotica/?hl=en"><img src="slike za sajt/instagram.svg" alt=""></a>
+        <a href="https://www.tiktok.com/@politehnickasubotica"><img src="slike za sajt/tiktok.svg" alt=""></a>
+        <a href="https://www.facebook.com/politehnickasu.edu.rs"><img src="slike za sajt/facebook.svg" alt=""></a>
+    </div>
+    </footer>
+
+ovo je html kod za dropdown meni
+
+    <div class="dropdown" id="dropdown">
+        <a href="heropage.html" >Početna</a>
+        <a href="radovi.html" >Radovi</a>
+        <a href="blog.html" >Blog</a>
+        <a href="osmeru.html" >O Smeru</a>
+        <a href="Kontakt.html" >Kontakt</a>
+    </div>
+
+*/
+
+
+:root{
+    --primarna:#346CD4;
+    --sekundarna:#FFFFFF;
+    --accent:#21468B;
+}
+
+
+/*
+kopiraj :root u tvoj css file 
+umesto da pises hex kod za boju mozes samo
+ var(--primarna) na primer
+ mozes samo napisati --primarna kao prečicu
+*/
+
+@font-face {
+    font-family:Cocogoose ;
+    src: url(font/Cocogoose-Pro-Regular-trial.ttf);
+}
+
+@font-face {
+    font-family:cocogoosesemi ;
+    src: url(font/Cocogoose-Pro-Semilight-trial.ttf);
+}
+
+*{margin: 0;
+padding: 0;}
+
+
+header{padding:30px 100px 30px 100px ;
+    background-color: var(--sekundarna);
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.20);
+    display: flex;
+max-width: 100vw;
+justify-content: space-between;
+font-family: cocogoose;
+align-items: center;
+font-size: 23px;
+max-height: 142px;
+}
+header img{user-select: none;}
+
+header #mobile{display: none;
+    user-select: none;}
+
+nav{width: 763px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: relative;
+    right: calc(100%-100px);
+    bottom: -25px
+}
+
+nav a{text-decoration: none;
+color:var(--primarna);  
+padding-bottom: 51px;
+position: relative;
+}
+
+.dropmenu{position: absolute;
+width: fit-content;
+right:91px;
+transition: 300ms;
+top: 55px;
+display: none;
+}
+
+.closemenu{position: absolute;
+width: fit-content;
+right:90px;
+transition: 300ms;
+top: 55px;
+display: none;
+}
+
+header #closemenu{
+position:absolute;
+cursor: pointer;
+transition: 300ms;
+user-select: none;
+}
+
+header #menu{
+    align-self: flex-start;
+    position: absolute;
+user-select: none;
+    z-index: 3;
+    cursor: pointer;
+    transition: 300ms;
+    }
+
+    .dropdown{display: flex;
+        width: 100%;
+    top: -500px;
+    background-color: var(--sekundarna);
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    z-index: 100;
+    overflow: hidden;
+    transition: 300ms;
+    transition-timing-function: ease-out;}
+    
+    .dropdown a{text-decoration: none;
+    color:var(--primarna) ;
+    font-family: cocogoosesemi;
+    font-size:20px;
+    max-width: 100vw;
+    display: flex;
+    padding: 20px 10px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    transition: 300ms;
+    transition-timing-function: ease-out;
+    transition-delay:50ms ;
+    }
+
+    .dropdown a:focus{font-family: cocogoose;
+    color: var(--accent);}
+    .dropdown a:hover{background: rgba(52, 108, 212, 0.35);
+    transition: 300ms;
+    transition-timing-function: ease-out;
+    transition-delay:50ms ;
+}
+
+/*
+nav #osmeru{border-bottom: var(--accent) solid 8px;
+    color: var(--accent);
+    bottom: -5px;
+    }
+
+kopiraj ovo u svoj css file i
+zameni #pocetna sa tvojim id 
+da se promeni boja i da se pojavi linija
+*/
+
+footer{display: flex;
+    max-width: 100vw;
+    justify-content: space-between;
+align-items: center;
+    background-color: var(--primarna);
+padding: 82.5px 100px 82.5px 100px;
+font-family: cocogoosesemi;
+font-size: 23px;
+transition: 0.3s;}
+
+.footernav{display: flex;
+gap: 83px;}
+
+.linkovi{display: flex;
+    width: 140px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    row-gap: 20px;
+    flex-shrink: 0;
+    flex-wrap: wrap;}
+
+footer a{text-decoration: none;
+color: white;}
+
+@media (max-width:1200px) {
+    header{padding:30px 50px 30px 50px ;
+    transition: 0.3s;}
+    footer{padding: 82.5px 50px 82.5px 50px;
+    transition: 0.3s;}
+}
+
+
+@media (max-width:1100px){
+    nav{
+    display: none;
+    }
+   header #menu{display: block }
+   footer{flex-direction: column;
+gap: 100px;}
+.dropmenu{display: block;}
+.closemenu{display: block;}
+.closemenu #closemenu{display: none;}
+
+
+footer{padding: 55px 50px 55x 50px;}
+.footernav{
+text-align: center;
+gap: 42px;}
+}
+
+@media (max-width:600px){
+    header{padding:32px 10px 32px 10px; 
+}
+
+.dropmenu{right: 0;
+transition: 300ms;}
+
+.closemenu{right: 8px;
+transition: 300ms;}
+
+    header #pc{display: none;}
+    header #mobile{display: block;}
+    header #menu{right: 10px;
+    transition: 300ms;}
+    header #closemenu{right: 3px;
+    transition: 300ms;}
+    footer{padding: 55px 10px 55px 10px;
+    transition: 0.3s;}
+    .footernav{flex-direction: column;}
+    }
+

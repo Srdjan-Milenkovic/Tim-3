@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+    <link rel="icon" type="image/x-icon" href="slike/phone_logo.svg">
+    <link rel="stylesheet" href="radovicss.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script src="radjavascript.js" defer></script>
+    <script src="dropdown.js"></script>
+    <title>Radovi</title>
+</head>
+<body>
+    <header>
+        <a href="homepage.html" id="pc"><img src="slike/pc_logo.svg" alt=""></a>
+        <a href="homepage.html" id="mobile"><img src="slike/phone_logo.svg" alt=""></a>        
+        <nav>
+            <a href="homepage.html" id="pocetna">Početna</a>
+            <a href="radovi.html" id="radovi">Radovi</a>
+            <a href="blog.html" id="blog">Blog</a>
+            <a href="osmeru.html" id="osmeru">O Smeru</a>
+            <a href="kontakt.html" id="kontakt">Kontakt</a>
+        </nav>
+        <div class="dropmenu"><img src="slike/menu.svg" alt="" onclick="dropmenu()" id="menu"></div>
+        <div class="closemenu"><img src="slike/closemenu.svg" alt="" onclick="closemenu()" id="closemenu"></div>
+    </header>
+   
+    
+    <div class="dropdown" id="dropdown">
+        <a href="homepage.html" >Početna</a>
+        <a href="radovi.html" >Radovi</a>
+        <a href="blog.html" >Blog</a>
+        <a href="osmeru.html" >O Smeru</a>
+        <a href="Kontakt.html" >Kontakt</a>
+    </div>
+<div class="topbar">
+    <h1>Sortirajte po:</h1>
+   <div class="mobilesort"> 
+        <div class="sortbutton figmatag"   onclick="figmasort()"><img src="slike/figmaradovi.svg" alt="">Figma file</div>
+        <div class="sortbutton ilustracijetag"  onclick="ilustracijasort()"><img src="slike/airadovi.svg" alt="">Ilustracije</div>
+        <div class="sortbutton zavrsenkodtag" onclick="kodsort()"><img src="slike/kodradovi.svg" alt="">Završen kod</div>
+        <div class="sortbutton reset" onclick="resetsort()" ><img src="slike/resetsort.svg" alt=""> Pokaži sve</div>
+    </div>
+    
+</div>
+<div class="main">
+<div class="sidebar">
+    <h1>Sortirajte po:</h1>
+    <div class="sortbutton figmatag"  onclick="figmasort()"><img src="slike/figmaradovi.svg" alt="">Figma file</div>
+    <div class="sortbutton ilustracijetag"  onclick="ilustracijasort()"><img src="slike/airadovi.svg" alt="">Ilustracije</div>
+    <div class="sortbutton zavrsenkodtag" onclick="kodsort()"><img src="slike/kodradovi.svg" alt="">Završen kod</div>
+    <div class="sortbutton reset" onclick="resetsort()" ><img src="slike/resetsort.svg" alt=""> Pokaži sve</div>
+</div>
+<div class="content">
+<div class="figmacard kodcard" id="card">
+    <div class="image"><a href="rad1.html"><img src="slike/showcase picture.png" alt=""></a></div>
+    <div class="user"><img src="slike/userpic1.png" alt=""><h1>Srđan Milenković</h1></div>
+    <div class="tags">
+        <div class="tag"><img src="slike/figmaradovi.svg" alt=""> Figma file</div>
+        <div class="tag"><img src="slike/kodradovi.svg" alt="">Završen kod</div>
+    </div>
+    <div class="text">
+    <p>Na početku treće godine smo bili dobili zadatak da napravimo sajt,  a temu da dobijemo kroz random word generator sajt.Ja sam bio dobio dijamant kao temu, pa zato mi je sajt o nakitu.Zamislio sam da ova kompanija koristi dijamante napravljene u laboratoriji, i da se sa tim razlikuje od konkurencije.
+        Prvi verzija sajta nije bila dobra, i nisam imao volje da popravljam sve od dizajna do koda. </p>
+    </div>
+</div>
+<div class="figmacard ilustracijacard kodcard" id="card">
+    <div class="image"><a href="#"><img src="#" alt=""></a></div>
+    <div class="user"><img src="slike/sofija.png" alt=""><h1>Lorem ipsum</h1></div>
+    <div class="tags">
+        <div class="tag"><img src="slike/figmaradovi.svg" alt=""> Figma file</div>
+        <div class="tag"><img src="slike/airadovi.svg" alt=""> Ilustracije</div>
+        <div class="tag"><img src="slike/kodradovi.svg" alt="">Završen kod</div>
+    </div>
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna turpis, suscipit eu condimentum a, facilisis in ex. Cras viverra purus non fel </p>
+            </div>
+
+</div>
+
+<div class="ilustracijacard" id="card">
+    <div class="image"><a href="#"><img src="#" alt=""></a></div>
+    <div class="user"><img src="slike/nina.png" alt=""><h1>Lorem ipsum</h1></div>
+    <div class="tags">
+        <div class="tag"><img src="slike/airadovi.svg" alt=""> Ilustracije</div>
+    </div>
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna turpis, suscipit eu condimentum a, facilisis in ex. Cras viverra purus non fel </p>
+            </div>
+
+</div>
+
+<div class="figmacard ilustracijacard" id="card">
+    <div class="image"><a href="#"><img src="#" alt=""></a></div>
+    <div class="user"><img src="slike/milica.png" alt=""><h1>Lorem ipsum</h1></div>
+    <div class="tags">
+        <div class="tag"><img src="slike/figmaradovi.svg" alt=""> Figma file</div>
+        <div class="tag"><img src="slike/airadovi.svg" alt=""> Ilustracije</div>
+
+    </div>
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna turpis, suscipit eu condimentum a, facilisis in ex. Cras viverra purus non fel </p>
+            </div>
+</div>
+
+<div class="kodcard" id="card">
+    <div class="image"><a href="#"><img src="#" alt=""></a></div>
+    <div class="user"><img src="slike/milica.png" alt=""><h1>Lorem ipsum</h1></div>
+    <div class="tags">
+        <div class="tag"><img src="slike/kodradovi.svg" alt="">Završen kod</div>
+    </div>
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna turpis, suscipit eu condimentum a, facilisis in ex. Cras viverra purus non fel </p>
+            </div>
+</div>
+
+<div class="figmacard kodcard" id="card">
+    <div class="image"><a href="#"><img src="#" alt=""></a></div>
+    <div class="user"><img src="slike/danilo.png" alt=""><h1>Lorem ipsum</h1></div>
+    <div class="tags">
+        <div class="tag"><img src="slike/figmaradovi.svg" alt=""> Figma file</div>
+        <div class="tag"><img src="slike/kodradovi.svg" alt="">Završen kod</div>
+    </div>
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna turpis, suscipit eu condimentum a, facilisis in ex. Cras viverra purus non fel </p>
+            </div>
+</div>
+
+<div class="figmacard ilustracijacard" id="card">
+    <div class="image"><a href="#"><img src="#" alt=""></a></div>
+    <div class="user"><img src="#" alt=""><h1>Lorem ipsum</h1></div>
+    <div class="tags">
+        <div class="tag"><img src="slike/figmaradovi.svg" alt=""> Figma file</div>
+        <div class="tag"><img src="slike/airadovi.svg" alt=""> Ilustracije</div>
+    </div>
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna turpis, suscipit eu condimentum a, facilisis in ex. Cras viverra purus non fel </p>
+            </div>
+</div>
+
+<div class="figmacard ilustracijacard kodcard" id="card">
+    <div class="image"><a href="#"><img src="#" alt=""></a></div>
+    <div class="user"><img src="#" alt=""><h1>Lorem ipsum</h1></div>
+    <div class="tags">
+        <div class="tag"><img src="slike/figmaradovi.svg" alt=""> Figma file</div>
+        <div class="tag"><img src="slike/airadovi.svg" alt=""> Ilustracije</div>
+        <div class="tag"><img src="slike/kodradovi.svg" alt="">Završen kod</div>
+    </div>
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna turpis, suscipit eu condimentum a, facilisis in ex. Cras viverra purus non fel </p>
+            </div>
+</div>
+
+<div class="figmacard kodcard" id="card">
+    <div class="image"><a href="#"><img src="#" alt=""></a></div>
+    <div class="user"><img src="#" alt=""><h1>Lorem ipsum</h1></div>
+    <div class="tags">
+        <div class="tag"><img src="slike/figmaradovi.svg" alt=""> Figma file</div>
+        <div class="tag"><img src="slike/kodradovi.svg" alt="">Završen kod</div>
+    </div>
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna turpis, suscipit eu condimentum a, facilisis in ex. Cras viverra purus non fel </p>
+            </div>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+    <a href="pocetna.html"><img src="slike/logop.png" alt=""></a>
+    <div class="footernav">
+        <a href="radovi.html">Radovi</a>
+        <a href="osmeru.html">O Smeru</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="blog.html">Blog</a>
+    </div>
+    <div class="linkovi">
+        <a href="https://www.youtube.com/@politehn"><img src="slike/yt.png" alt=""></a>
+        <a href="https://www.instagram.com/politehnicka.skola.subotica/?hl=en"><img src="slike/ig.png" alt=""></a>
+        <a href="https://www.tiktok.com/@politehnickasubotica"><img src="slike/tt.png" alt=""></a>
+        <a href="https://www.facebook.com/politehnickasu.edu.rs"><img src="slike/face.png" alt=""></a>
+    </div>
+</footer>
+</body>
+</html>

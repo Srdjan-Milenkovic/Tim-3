@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rad1style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="dropdown.js"></script>
+    <script src="radjavascript.js"></script>
+    <link rel="icon" type="image/x-icon" href="slike/phone_logo.svg">
+    <title>Srđan Milenković</title>
+</head>
+<body>
+    <header>
+        <a href="homepage.html" id="pc"><img src="slike/pc_logo.svg" alt=""></a>
+        <a href="homepage.html" id="mobile"><img src="slike/phone_logo.svg" alt=""></a>        
+        <nav>
+            <a href="homepage.html" id="pocetna">Početna</a>
+            <a href="radovi.html" id="radovi">Radovi</a>
+            <a href="blog.html" id="blog">Blog</a>
+            <a href="osmeru.html" id="osmeru">O Smeru</a>
+            <a href="Kontakt.html" id="kontakt">Kontakt</a>
+        </nav>
+       <div class="dropmenu"><img src="slike/menu.svg" alt="" onclick="dropmenu()" id="menu"></div>
+      <div class="closemenu"><img src="slike/closemenu.svg" alt="" onclick="closemenu()" id="closemenu"></div>
+        </header>
+        <div class="dropdown" id="dropdown">
+            <a href="homepage.html" >Početna</a>
+            <a href="radovi.html" >Radovi</a>
+            <a href="blog.html" >Blog</a>
+            <a href="osmeru.html" >O Smeru</a>
+            <a href="Kontakt.html" >Kontakt</a>
+        </div>
+
+<div class="topimg"></div>
+<div class="description">
+    <h1>Tucker & Kane</h1>
+    <p>    Na početku treće godine smo bili dobili zadatak da napravimo sajt, a temu da dobijemo kroz random word generator sajt.Ja sam bio dobio dijamant kao temu, pa zato mi je sajt o nakitu.Zamislio sam da ova kompanija koristi dijamante napravljene u laboratoriji, i da se sa tim razlikuje od konkurencije.
+        Prvi verzija sajta nije bila dobra, i nisam imao volje da popravljam sve od dizajna do koda. <br>
+        Na kraju godine smo isto dobili zadatak da napravimo sajt, i mogli smo ili da smislimo novu ideju ili da koristimo neku postojeću. Ovo što sad pokazujem je treća verzija, zato što nisam bio zadovoljan sa drugom verzijom, previše je bila komplikovana i nisam siguran dali bi je mogao uraditi kako sam  zamišljao.
+    </p>
+</div>
+
+ 
+<div class="userinfo">
+    <div class="user">
+        <img src="slike/userpic1.png" alt="">
+        <h1>Srđan Milenković</h1>
+    </div>
+    <div class="userdescription">
+        <p>
+        Znam nešto možda.
+        </p>
+</div>
+    <div class="userlinks">
+        <h1>Nađite me na:</h1>
+        <div class="linksgroup">
+            <a href="#"><img src="slike/twitter link.svg" alt=""></a>
+            <a href="#"><img src="slike/instagram link.svg" alt=""></a>
+        </div>    
+    </div>
+</div>
+
+<div class="imageshowcase">
+    <div class="showcasegroup">
+    <img src="slike/showcase 1.jpg" alt="" class="img4">
+    <img src="slike/showcase 2.jpg" alt="" class="img5">
+    <img src="slike/showcase 3.jpg" alt="" class="img6">
+    </div>
+    <div class="showcasetags">
+        <div class="tag"><img src="slike/figmaradovi.svg" alt="">Figma file</div>
+        <div class="tag"><img src="slike/kodradovi.svg" alt="">Završen kod</div>
+    </div>
+
+</div>
+
+
+
+<div class="other">
+    <h1>Drugi radovi</h1>
+    <div class="buttongroup">
+        <div class="button sajtovi" onclick="sajtovishow()" id="sajtovi"><img src="slike/sajtovibutton.svg" alt=""> Sajtovi</div>
+        <div class="button ilustracije" onclick="ilustracijeshow()"><img src="slike/ilustracijebutton.svg" alt="">Ilustracije</div>
+        <div class="button drugo" onclick="drugoshow()"><img src="slike/drugobutton.svg" alt="">Drugo</div>
+    </div>
+    <div class="imagegroup">
+        <div class="scrollwrapper">
+            <img src="slike/bottom picture 1.jpg" alt="" class="sajtoviimg img1">
+            <img src="slike/bottom picture 2.jpg" alt="" class="sajtoviimg img2">
+            <img src="slike/bottom picture 3.jpg" alt="" class="sajtoviimg img3">
+            <img src="" alt="" class="ilustracijeimg">
+            <img src="" alt="" class="ilustracijeimg">
+            <img src="" alt="" class="ilustracijeimg">
+            <img src="" alt="" class="ilustracijeimg">
+            <img src="" alt="" class="ilustracijeimg">
+            <img src="" alt="" class="ilustracijeimg">
+            <img src="" alt="" class="drugoimg">
+            <img src="" alt="" class="drugoimg">
+            <img src="" alt="" class="drugoimg">
+            <img src="" alt="" class="drugoimg">
+            <img src="" alt="" class="drugoimg">
+        </div>
+    </div>
+<div class="fullimg full1"><img src="slike/bottom picture 1.jpg"  alt=""></div>
+    <div class="fullimg full2"><img src="slike/bottom picture 2.jpg"  alt=""> </div>
+   <div class="fullimg full3"> <img src="slike/bottom picture 3.jpg"  alt=""></div>
+   <div class="fullimg full4"><img src="slike/showcasefull 1.jpg"  alt=""></div>
+   <div class="fullimg full5"><img src="slike/showcasefull 2.jpg"  alt=""> </div>
+  <div class="fullimg full6"> <img src="slike/showcasefull 3.jpg"  alt=""></div>
+
+
+</div>
+
+        <footer>
+            <a href="homepage.html"><img src="slike/footer_logo.svg" alt=""></a>
+            <div class="footernav">
+                <a href="radovi.html">Radovi</a>
+                <a href="osmeru.html">O Smeru</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="blog.html">Blog</a>
+            </div>
+            <div class="linkovi">
+                <a href="https://www.youtube.com/@politehn"><img src="slike/youtube.svg" alt=""></a>
+                <a href="https://www.instagram.com/politehnicka.skola.subotica/?hl=en"><img src="slike/instagram.svg" alt=""></a>
+                <a href="https://www.tiktok.com/@politehnickasubotica"><img src="slike/tiktok.svg" alt=""></a>
+                <a href="https://www.facebook.com/politehnickasu.edu.rs"><img src="slike/facebook.svg" alt=""></a>
+            </div>
+            </footer>
+    
+</body>
+</html>
